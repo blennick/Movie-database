@@ -48,8 +48,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,6 +79,42 @@
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Director.cs">
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Genre.cs">
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MainActor.cs">
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie.cs">
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MovieHasGenre.cs">
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserOwnsMovy.cs">
+      <DependentUpon>MovieDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="MovieDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -100,6 +143,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EntityDeploy Include="Models\MovieDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MovieDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\MovieDBModel.edmx.diagram">
+      <DependentUpon>MovieDBModel.edmx</DependentUpon>
+    </None>
     <None Include="MovieDBDataSet.xsc">
       <DependentUpon>MovieDBDataSet.xsd</DependentUpon>
     </None>
@@ -122,6 +172,7 @@
     <None Include="MovieDBDataSet1.xss">
       <DependentUpon>MovieDBDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -136,6 +187,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Models\MovieDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MovieDBModel.Context.cs</LastGenOutput>
+      <DependentUpon>MovieDBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\MovieDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MovieDBModel.edmx</DependentUpon>
+      <LastGenOutput>MovieDBModel.cs</LastGenOutput>
+    </Content>
     <Content Include="MovieDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -155,6 +216,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

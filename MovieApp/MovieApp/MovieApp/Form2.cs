@@ -21,5 +21,10 @@ namespace MovieApp
         {
 
         }
+
+        private void submitBT_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

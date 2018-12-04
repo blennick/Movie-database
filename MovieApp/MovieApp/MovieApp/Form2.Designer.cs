@@ -145,6 +145,7 @@
             this.submitBT.TabIndex = 10;
             this.submitBT.Text = "Submit";
             this.submitBT.UseVisualStyleBackColor = true;
+            this.submitBT.Click += new System.EventHandler(this.submitBT_Click);
             // 
             // cancelBT
             // 
