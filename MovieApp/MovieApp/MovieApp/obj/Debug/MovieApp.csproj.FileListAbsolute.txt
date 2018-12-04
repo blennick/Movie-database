@@ -10,3 +10,16 @@ C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\Mo
 C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.exe
 C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.pdb
 C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.csprojResolveAssemblyReference.cache
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\MovieDB.mdf
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\MovieDB_log.ldf
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\MovieApp.exe.config
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\MovieApp.exe
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\MovieApp.pdb
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.csprojAssemblyReference.cache
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Form1.resources
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Form2.resources
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Properties.Resources.resources
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.csproj.GenerateResource.cache
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.csproj.CoreCompileInputs.cache
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.exe
+C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.pdb
