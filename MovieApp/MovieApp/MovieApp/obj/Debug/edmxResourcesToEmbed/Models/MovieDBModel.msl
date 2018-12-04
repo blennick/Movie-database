@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MovieDBModelStoreContainer" CdmEntityContainer="MovieDBEntities2">
+    <EntitySetMapping Name="Directors">
+      <EntityTypeMapping TypeName="MovieDBModel.Director">
+        <MappingFragment StoreEntitySet="Director">
+          <ScalarProperty Name="dirId" ColumnName="dirId" />
+          <ScalarProperty Name="dirFName" ColumnName="dirFName" />
+          <ScalarProperty Name="dirLName" ColumnName="dirLName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="MovieDBModel.Genre">
+        <MappingFragment StoreEntitySet="Genre">
+          <ScalarProperty Name="genreId" ColumnName="genreId" />
+          <ScalarProperty Name="genreName" ColumnName="genreName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainActors">
+      <EntityTypeMapping TypeName="MovieDBModel.MainActor">
+        <MappingFragment StoreEntitySet="MainActor">
+          <ScalarProperty Name="actorId" ColumnName="actorId" />
+          <ScalarProperty Name="actorFName" ColumnName="actorFName" />
+          <ScalarProperty Name="actorLName" ColumnName="actorLName" />
+          <ScalarProperty Name="actorRole" ColumnName="actorRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="MovieDBModel.Movie">
+        <MappingFragment StoreEntitySet="Movie">
+          <ScalarProperty Name="movieId" ColumnName="movieId" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="releaseYear" ColumnName="releaseYear" />
+          <ScalarProperty Name="dirID" ColumnName="dirID" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="genreId" ColumnName="genreId" />
+          <ScalarProperty Name="actorId" ColumnName="actorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieHasGenres">
+      <EntityTypeMapping TypeName="MovieDBModel.MovieHasGenre">
+        <MappingFragment StoreEntitySet="MovieHasGenre">
+          <ScalarProperty Name="hasId" ColumnName="hasId" />
+          <ScalarProperty Name="movieId" ColumnName="movieId" />
+          <ScalarProperty Name="genreId" ColumnName="genreId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MovieDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserOwnsMovies">
+      <EntityTypeMapping TypeName="MovieDBModel.UserOwnsMovy">
+        <MappingFragment StoreEntitySet="UserOwnsMovies">
+          <ScalarProperty Name="ownId" ColumnName="ownId" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="movieId" ColumnName="movieId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

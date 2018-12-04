@@ -23,3 +23,6 @@ C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\M
 C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.csproj.CoreCompileInputs.cache
 C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.exe
 C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.pdb
+C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\EntityFramework.dll
+C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\EntityFramework.xml
+C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Form2.resources

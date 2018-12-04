@@ -49,7 +49,7 @@ namespace MovieApp
             }
             else
             {
-                dv.Filter = "title LIKE '" + searchText + "'";
+                dv.Filter = "title LIKE '%" + searchText + "%'";
                 dataGridView1.DataSource = dv;
             }
 
@@ -57,6 +57,18 @@ namespace MovieApp
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            BindingSource dv = (BindingSource)dataGridView1.DataSource;
+            dv.RemoveFilter();
+            String searchText = textBox1.Text;
+            if (searchText == "")
+            {
+                this.movieTableAdapter.Fill(this.movieDBDataSet1.Movie);
+            }
+            else
+            {
+                dv.Filter = "title LIKE '%" + searchText + "%'";
+                dataGridView1.DataSource = dv;
+            }
 
         }
 
@@ -68,6 +80,11 @@ namespace MovieApp
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             this.dataGridView1.Sort(this.dataGridView1.Columns[0], ListSortDirection.Descending);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
