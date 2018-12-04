@@ -40,12 +40,24 @@ namespace MovieApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            BindingSource dv = (BindingSource)dataGridView1.DataSource;
+            dv.RemoveFilter();
+            String searchText = textBox1.Text;
+            if(searchText == "")
+            {
+                this.movieTableAdapter.Fill(this.movieDBDataSet1.Movie);
+            }
+            else
+            {
+                dv.Filter = "title LIKE '" + searchText + "'";
+                dataGridView1.DataSource = dv;
+            }
 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //this.dataGridView1.Sort(this.dataGridView1.Columns[0], );
+
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
