@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace MovieApp {
     
     
@@ -1305,6 +1307,11 @@ SELECT movieId, title, releaseYear, dirID, userId, genreId, actorId FROM Movie W
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string title, global::System.Nullable<int> releaseYear, string dirID, int userId, global::System.Nullable<int> genreId, global::System.Nullable<int> actorId, int Original_movieId, string Original_title, global::System.Nullable<int> Original_releaseYear, string Original_dirID, int Original_userId, global::System.Nullable<int> Original_genreId, global::System.Nullable<int> Original_actorId) {
             return this.Update(title, releaseYear, dirID, userId, genreId, actorId, Original_movieId, Original_title, Original_releaseYear, Original_dirID, Original_userId, Original_genreId, Original_actorId, Original_movieId);
+        }
+
+        internal void Insert(string title, int? releaseYear, int? dirID, int userId, int? genreId, int? actorId)
+        {
+            throw new NotImplementedException();
         }
     }
     

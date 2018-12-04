@@ -69,5 +69,11 @@ namespace MovieApp
         {
             this.dataGridView1.Sort(this.dataGridView1.Columns[0], ListSortDirection.Descending);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+        }
     }
 }

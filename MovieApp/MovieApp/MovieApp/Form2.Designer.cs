@@ -67,9 +67,9 @@
             this.releaseDateTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.releaseDateTxt.Location = new System.Drawing.Point(42, 94);
             this.releaseDateTxt.Name = "releaseDateTxt";
-            this.releaseDateTxt.Size = new System.Drawing.Size(111, 20);
+            this.releaseDateTxt.Size = new System.Drawing.Size(110, 20);
             this.releaseDateTxt.TabIndex = 2;
-            this.releaseDateTxt.Text = "Release Date:";
+            this.releaseDateTxt.Text = "Release Year:";
             // 
             // releaseDataTB
             // 
