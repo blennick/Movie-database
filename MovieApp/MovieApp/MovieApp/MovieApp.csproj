@@ -80,6 +80,24 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Director.cs">
       <DependentUpon>MovieDBModel.tt</DependentUpon>
     </Compile>
@@ -126,6 +144,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MovieDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MovieDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MovieDBDataSetDIR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDBDataSetDIR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MovieDBDataSetGenre.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDBDataSetGenre.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MovieDBDataSetMainActor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDBDataSetMainActor.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -133,6 +171,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -171,6 +218,50 @@
     </None>
     <None Include="MovieDBDataSet1.xss">
       <DependentUpon>MovieDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSet2.xsc">
+      <DependentUpon>MovieDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieDBDataSet2.xss">
+      <DependentUpon>MovieDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSetDIR.xsc">
+      <DependentUpon>MovieDBDataSetDIR.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSetDIR.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieDBDataSetDIR.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieDBDataSetDIR.xss">
+      <DependentUpon>MovieDBDataSetDIR.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSetGenre.xsc">
+      <DependentUpon>MovieDBDataSetGenre.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSetGenre.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieDBDataSetGenre.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieDBDataSetGenre.xss">
+      <DependentUpon>MovieDBDataSetGenre.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSetMainActor.xsc">
+      <DependentUpon>MovieDBDataSetMainActor.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDBDataSetMainActor.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieDBDataSetMainActor.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieDBDataSetMainActor.xss">
+      <DependentUpon>MovieDBDataSetMainActor.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

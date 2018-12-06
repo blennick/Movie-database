@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.releaseYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.movieBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.movieDBDataSet1 = new MovieApp.MovieDBDataSet1();
             this.movieDBDataSet = new MovieApp.MovieDBDataSet();
@@ -39,10 +41,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.releaseYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieDBDataSet1)).BeginInit();
@@ -65,6 +67,18 @@
             this.dataGridView1.Size = new System.Drawing.Size(276, 311);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // titleDataGridViewTextBoxColumn
+            // 
+            this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
+            this.titleDataGridViewTextBoxColumn.HeaderText = "title";
+            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            // 
+            // releaseYear
+            // 
+            this.releaseYear.DataPropertyName = "releaseYear";
+            this.releaseYear.HeaderText = "releaseYear";
+            this.releaseYear.Name = "releaseYear";
             // 
             // movieBindingSource
             // 
@@ -110,7 +124,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(294, 158);
+            this.radioButton1.Location = new System.Drawing.Point(294, 72);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(52, 21);
             this.radioButton1.TabIndex = 3;
@@ -122,7 +136,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(294, 185);
+            this.radioButton2.Location = new System.Drawing.Point(294, 99);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(52, 21);
             this.radioButton2.TabIndex = 4;
@@ -131,45 +145,54 @@
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(294, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(294, 351);
+            this.button2.Location = new System.Drawing.Point(294, 143);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 23);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Add New Movie";
+            this.button2.Text = "View Directors";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // titleDataGridViewTextBoxColumn
+            // label2
             // 
-            this.titleDataGridViewTextBoxColumn.DataPropertyName = "title";
-            this.titleDataGridViewTextBoxColumn.HeaderText = "title";
-            this.titleDataGridViewTextBoxColumn.Name = "titleDataGridViewTextBoxColumn";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(294, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "No Filter selected";
             // 
-            // releaseYear
+            // button1
             // 
-            this.releaseYear.DataPropertyName = "releaseYear";
-            this.releaseYear.HeaderText = "releaseYear";
-            this.releaseYear.Name = "releaseYear";
+            this.button1.Location = new System.Drawing.Point(294, 172);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "View Genre";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(295, 202);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(129, 23);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "View Main Actors";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 422);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(466, 422);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox1);
@@ -200,10 +223,12 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn releaseYear;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -16,7 +16,9 @@ namespace MovieApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            string value = "";
+            int valint  = 0;
+            Application.Run(new Form1(value, valint,0));
         }
     }
 }

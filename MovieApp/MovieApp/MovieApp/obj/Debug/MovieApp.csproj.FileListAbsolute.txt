@@ -26,3 +26,6 @@ C:\Users\B-rant\Desktop\db\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\M
 C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\EntityFramework.dll
 C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\bin\Debug\EntityFramework.xml
 C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Form2.resources
+C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Form3.resources
+C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Form4.resources
+C:\Users\Mackolas\Desktop\Movie-database\MovieApp\MovieApp\MovieApp\obj\Debug\MovieApp.Form5.resources
